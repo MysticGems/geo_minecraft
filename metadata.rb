@@ -1,11 +1,11 @@
 name 'geo_minecraft'
-maintainer 'The Authors'
-maintainer_email 'you@example.com'
+maintainer 'Lee Davis'
+maintainer_email 'lee@geographic.net'
 license 'All Rights Reserved'
-description 'Installs/Configures geo_minecraft'
-long_description 'Installs/Configures geo_minecraft'
+description 'Wrapper cookbook for configuring minecraft.geographic.net'
+long_description 'Does all those Minecrafty things'
 version '0.1.0'
-chef_version '>= 12.1' if respond_to?(:chef_version)
+chef_version '>= 12.5' if respond_to?(:chef_version)
 
 # The `issues_url` points to the location where issues for this cookbook are
 # tracked.  A `View Issues` link will be displayed on this cookbook's page when
@@ -18,3 +18,5 @@ chef_version '>= 12.1' if respond_to?(:chef_version)
 # a Supermarket.
 #
 # source_url 'https://github.com/<insert_org_here>/geo_minecraft'
+
+depends 'minecraft-server', '~> 0.1.4'

@@ -12,7 +12,10 @@ unless os.windows?
   end
 end
 
-# This is an example test, replace it with your own test.
-describe port(80), :skip do
-  it { should_not be_listening }
+describe port(22) do
+  it { should be_listening }
+end
+
+describe port(25565) do
+  it { should be_listening }
 end
